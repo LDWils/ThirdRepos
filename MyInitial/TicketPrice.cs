@@ -13,6 +13,7 @@ namespace Ticketing
         private decimal amountDue;
         private decimal mPrice;
 
+        const decimal mBackStall = 15.0m;
         const decimal mdecBalcony = 35.5m;
         const decimal mdecGeneral = 28.75m;
         const decimal mdecBox = 62.0m;
@@ -64,6 +65,9 @@ namespace Ticketing
                  break;
              case 3:
                  mPrice = mdecBox;
+                 break;
+             case 4:
+                 mPrice = mBackStall;
                  break;
          }
          if (discount)
